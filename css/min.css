@@ -59,11 +59,37 @@ h1 i {
   background: rgb(220,220,220); 
   top: 0px;
   left: 0px;
-  height: 64px;
+  height: 100%;
   line-height: 64px;
-  width: 64px;
+  width: 100%;
   z-index: 2;
   -webkit-transition: all .4s ease-out;
+}
+
+@media (max-width: 320px) { 
+  h1 {
+    font-size: 72px;
+  }
+  .social { 
+    width: 48px; 
+    height: 48px; 
+    margin-right: 4px; 
+  }
+  .social a {
+    line-height: 48px;
+    border-radius: 24px;
+  }
+  .social:first-child { 
+    margin-left: 4px; 
+  }
+  .presence { 
+    width: 264px;
+    height: 300px;
+    
+  }
+  .shadow-wrapper { 
+    top: -20px;
+  }
 }
 
 .social p {
